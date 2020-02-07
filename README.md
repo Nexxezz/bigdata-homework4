@@ -2,8 +2,8 @@
 TASK 2.
 1.Load weather data (.parquet) from HDFS into Hive table. 
  - download dataset (see courses.epam.com, 'hdfs homework' section)
- - download jar to lib
-    wget https://repo.hortonworks.com/content/repositories/releases/org/apache/hive/kafka-handler/3.1.0.3.1.0.6-1/kafka-handler-3.1.0.3.1.0.6-1.jar
+ - download jar to lib  
+ wget https://repo.hortonworks.com/content/repositories/releases/org/apache/hive/kafka-handler/3.1.0.3.1.0.6-1/kafka-handler-3.1.0.3.1.0.6-1.jar
  - docker cp lib sandbox-hdp:/usr/hdp/3.0.1.0-187/hive/
  - put dataset for homework into hdp via docker cp /local/path/ sandbox-hdp:/home/
  - unzip all .zip
