@@ -15,8 +15,8 @@ TASK 2.
    wget https://repo.hortonworks.com/content/repositories/releases/org/apache/hive/kafka-handler/3.1.0.3.1.0.0-78/kafka-handler-3.1.0.3.1.0.0-78.jar  
  - add jar to hive:  
    ADD JAR /root/201bd/jars/kafka-handler-3.1.0.3.1.0.0-78.jar
- - create hive table for weather data:
-  CREATE EXTERNAL TABLE weather /
+ - create hive table for weather data:  
+ CREATE EXTERNAL TABLE weather /
   (lng double,lat double,avg_tmpr_f double,avg_tmpr_c double,wthr_date string) / 
   STORED AS PARQUET LOCATION 'hdfs://sandbox-hdp.hortonworks.com:8020/tmp/dataset/weather/';
 
