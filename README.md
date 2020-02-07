@@ -10,7 +10,11 @@ TASK 2.
  - put dataset into hdfs via hdfs dfs -put /path/to/dataset /201bd/dataset/
  - hdfs dfs -chmod -R 777 /201bd
 
-2. Load data into Kafka using Hive-Kafka integration (Hive v3.x is required) or Kafka Connect API (jdbc connector).
+2. Load data into Kafka using Hive-Kafka integration (Hive v3.x is required) or Kafka Connect API (jdbc connector).  
+ - load kafka storage handler:
+   wget https://repo.hortonworks.com/content/repositories/releases/org/apache/hive/kafka-handler/3.1.0.3.1.0.0-78/kafka-handler-3.1.0.3.1.0.0-78.jar  
+ - add jar to hive:  
+   ADD JAR /root/201bd/jars/kafka-handler-3.1.0.3.1.0.0-78.jar
  - create hive table for weather data:
   CREATE EXTERNAL TABLE weather /
   (lng double,lat double,avg_tmpr_f double,avg_tmpr_c double,wthr_date string) / 
