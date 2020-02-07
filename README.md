@@ -24,4 +24,4 @@ TASK 2.
   TBLPROPERTIES ("kafka.topic" = "weather-topic", "kafka.bootstrap.servers" = "sandbox-hdp.hortonworks.com:6667");  
   - put data into kafka topic via kafka-hive integration:  
   INSERT INTO TABLE weather_kafka  
-  INSERT INTO TABLE weather_kafka SELECT `lng`, `lat`, `avg_tmpr_f`,`avg_tmpr_c`, `wthr_date`, null as `__key`, null as `__partition`, -1 as `__offset`, null as `__timestamp` from weather;
+  INSERT INTO TABLE weather_kafka SELECT ``lng`, `lat`, `avg_tmpr_f`,`avg_tmpr_c`, `wthr_date`, null as `__key`, null as `__partition`, -1 as `__offset`, null as `__timestamp` from weather;
